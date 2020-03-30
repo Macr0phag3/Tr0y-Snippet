@@ -41,7 +41,7 @@ def put_color(string, color, bold=True):
     '''
 
     if color == 'gray':
-        COLOR = Fore.WHITE
+        COLOR = Style.DIM + Fore.WHITE
     else:
         COLOR = getattr(Fore, color.upper(), "WHITE")
 
