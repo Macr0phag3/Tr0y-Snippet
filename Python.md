@@ -43,7 +43,7 @@ def put_color(string, color, bold=True):
     if color == 'gray':
         COLOR = Style.DIM + Fore.WHITE
     else:
-        COLOR = getattr(Fore, color.upper(), "WHITE")
+        COLOR = getattr(Fore, color.upper(), Fore.WHITE)
 
     return f'{Style.BRIGHT if bold else ""}{COLOR}{str(string)}{Style.RESET_ALL}'
 
